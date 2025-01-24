@@ -14,5 +14,10 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "scripts": {
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+}
+
 }
