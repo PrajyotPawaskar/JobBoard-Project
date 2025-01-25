@@ -27,7 +27,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 my-40 font-custom bg-white shadow-md rounded-lg">
+    <div className="flex justify-center font-custom items-center min-h-screen bg-gray-100 px-4">
+      <div className="w-full max-w-sm p-6 bg-white shadow-md rounded-lg sm:max-w-md md:max-w-md">
       <div className='text-2xl font-bold text-center mb-6 text-gray-800'>Signup</div>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -97,6 +98,7 @@ const Signup = () => {
         </button>
       </form>
       <ToastContainer />
+    </div>
     </div>
 
   )
