@@ -6,7 +6,7 @@ const Getinfo = () => {
   const [info, setInfo] = useState(null);
   try {
     const getInfo = async () => {
-      const res = await axios.get('http://localhost:3000/user/userdata', {
+      const res = await axios.get('https://jobboard-project.onrender.com/user/userdata', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

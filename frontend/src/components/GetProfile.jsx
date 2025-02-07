@@ -11,7 +11,7 @@ const GetProfile = () => {
 
   const getProfileInfo = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/profile/getinfo', {
+      const res = await axios.get('https://jobboard-project.onrender.com/profile/getinfo', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       setData(res.data.profile);

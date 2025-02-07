@@ -8,7 +8,7 @@ const GetSingleJob = () => {
   const {token} = useAuth();
   const getSingleData = async () => {
     try {
-      const res = await axios(`http://localhost:3000/jobs/${id}`,
+      const res = await axios(`https://jobboard-project.onrender.com/jobs/${id}`,
         {
           headers: {
             'Authorization': `Bearer ${token}`

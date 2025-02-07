@@ -12,7 +12,7 @@ const GetJobs = () => {
 
   const getJobsInfo = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/jobs/getjobs', {
+      const response = await axios.get('https://jobboard-project.onrender.com/jobs/getjobs', {
         headers: {
           'Authorization': `Bearer ${token}`
         }

@@ -18,7 +18,7 @@ const UpdateProfile = () => {
   // Fetch user profile data
   const getDataInfo = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/profile/getinfo', {
+      const res = await axios.get('https://jobboard-project.onrender.com/profile/getinfo', {
         headers: { 'Authorization': `Bearer ${token}` }
       });
 
@@ -57,7 +57,7 @@ const UpdateProfile = () => {
     }
 
     try {
-      const res = await axios.put('http://localhost:3000/profile/update', {
+      const res = await axios.put('https://jobboard-project.onrender.com/profile/update', {
         name: name.trim(),
         email: email.trim(),
         phoneno: phoneno.trim(),

@@ -26,7 +26,7 @@ const SetProfile = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:3000/profile/setprofile', {
+      const res = await axios.post('https://jobboard-project.onrender.com/profile/setprofile', {
         name: name.trim(),
         email: email.trim(),
         phoneno: phoneno.trim(),

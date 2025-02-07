@@ -16,7 +16,7 @@ const PostJob = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:3000/jobs/postjob',
+      const res = await axios.post('https://jobboard-project.onrender.com/jobs/postjob',
         {
           company:company.trim(),
           role: role.trim(),

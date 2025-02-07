@@ -7,7 +7,7 @@ const DeleteProfile = () => {
   const { token } = useAuth();
   const handleDelete = async () => {
     try {
-      const res = await axios.delete('http://localhost:3000/profile/delete',
+      const res = await axios.delete('https://jobboard-project.onrender.com/profile/delete',
         {
           headers: {
             'Authorization': `Bearer ${token}`

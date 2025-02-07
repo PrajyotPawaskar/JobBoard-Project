@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/user/register', { email, password, role });
+      await axios.post('https://jobboard-project.onrender.com/user/register', { email, password, role });
       toast.success("Signup Successful");
       setEmail('');
       setPassword('');

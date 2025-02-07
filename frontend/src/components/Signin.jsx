@@ -13,7 +13,7 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:3000/user/login', { email, password });
+      const res = await axios.post('https://jobboard-project.onrender.com/user/login', { email, password });
       setEmail('');
       setPassword('');
       toast.success("Login Successful");

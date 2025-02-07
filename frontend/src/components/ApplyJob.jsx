@@ -12,7 +12,7 @@ const ApplyJob = () => {
 
   const getSingleData = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/jobs/${id}`, {
+      const res = await axios.get(`https://jobboard-project.onrender.com/jobs/${id}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -30,7 +30,7 @@ const ApplyJob = () => {
 
   const applyJob = async () => {
     try {
-      const res = await axios.post(`http://localhost:3000/jobs/${id}`, {}, {
+      const res = await axios.post(`https://jobboard-project.onrender.com/jobs/${id}`, {}, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
