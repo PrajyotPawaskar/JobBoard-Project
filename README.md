@@ -83,7 +83,7 @@ JobBoard is a full-stack web application that connects employers and employees, 
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/jobboard.git
+   git clone https://github.com/PrajyotPawaskar/JobBoard-Project
    cd jobboard
    ```
 2. Install dependencies for the backend:
